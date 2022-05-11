@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meifawu.meifawu.dao.BarberStateMapper">
+    <select id="findAllBarberState" resultMap="barberstateMap">
+        select barberstate.*,barbers.barber_goodrate
+        from barbers,barberstate
+        where barbers.barber_name = barberstate.barber_name
+    </select>
+    <resultMap id="barberstateMap" type="com.meifawu.meifawu.entity.BarberState">
+        <id property="stateId" column="state_id"></id>
+        <result property="theDate" column="the_date"></result>
+        <result property="barberName" column="barber_name"></result>
+        <result property="t1State" column="t1_state"></result>
+        <result property="t2State" column="t2_state"></result>
+        <result property="t3State" column="t3_state"></result>
+        <result property="t4State" column="t4_state"></result>
+        <result property="t5State" column="t5_state"></result>
+        <association property="barbers"
+                     javaType="com.meifawu.meifawu.entity.Barbers">
+            <id property="barberName" column="barber_name"></id>
+            <result property="barberGoodrate" column="barber_goodrate"></result>
+        </association>
+    </resultMap>
+
+
+    <select id="findAllBarberStateByDate" resultMap="barberstateMap1" parameterType="java.time.LocalDate">
+        select barberstate.*,barbers.barber_goodrate
+        from barbers,barberstate
+        where barbers.barber_name = barberstate.barber_name and barberstate.the_date=#{barberstate.theDate}
+    </select>
+    <resultMap id="barberstateMap1" type="com.meifawu.meifawu.entity.BarberState">
+        <id property="stateId" column="state_id"></id>
+        <result property="theDate" column="the_date"></result>
+        <result property="barberName" column="barber_name"></result>
+        <result property="t1State" column="t1_state"></result>
+        <result property="t2State" column="t2_state"></result>
+        <result property="t3State" column="t3_state"></result>
+        <result property="t4State" column="t4_state"></result>
+        <result property="t5State" column="t5_state"></result>
+        <association property="barbers"
+                     javaType="com.meifawu.meifawu.entity.Barbers">
+            <id property="barberName" column="barber_name"></id>
+            <result property="barberGoodrate" column="barber_goodrate"></result>
+        </association>
+    </resultMap>
+
+
+    <update id="updateStateByBarberName" parameterType="com.meifawu.meifawu.entity.BarberState">
+        update barberstate
+        set t1_state=#{t1State},t2_state=#{t2State},t3_state=#{t3State},t4_state=#{t4State},t5_state=#{t5State}
+        where barber_name=#{barberName} and the_date = #{theDate}
+    </update>
+
+</mapper>
