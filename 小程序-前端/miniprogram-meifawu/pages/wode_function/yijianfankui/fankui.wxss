@@ -1,0 +1,61 @@
+.conts {
+    width: 750rpx;
+    height: auto;
+    border: 1rpx soldi red;
+    margin-top: 30rpx;
+}
+
+.areas {
+    height: 400rpx;
+    font-size: 30rpx;
+    text-indent: 28rpx;
+    border: 1rpx solid gainsboro;
+    padding-top: 30rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.areas2 {
+    height: 50rpx;
+    font-size: 30rpx;
+    text-indent: 28rpx;
+    border: 1rpx solid gainsboro;
+    padding-top: 30rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.currentWordNumber {
+    font-size: 28rpx;
+    color: gray;
+    position: absolute;
+    left: 480rpx;
+    top: 10rpx;
+}
+
+.hint {
+    font-size: 28rpx;
+    position: absolute;
+    top: 120rpx;
+    left: 30rpx;
+    color: #FF6600;
+}
+
+.wenti {
+    color: gray;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.xingxing {
+    color: red;
+    margin-top: 10px;
+}
+
+.phone_container {
+    color: gray;
+    margin-top: 10px;
+    margin-left: 40px;
+}

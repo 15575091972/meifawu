@@ -1,0 +1,6 @@
+.title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+  }

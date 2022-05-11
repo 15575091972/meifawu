@@ -1,0 +1,25 @@
+/* pages/homepage/homepage.wxss */
+.item {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  .jiantou_container {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+  }

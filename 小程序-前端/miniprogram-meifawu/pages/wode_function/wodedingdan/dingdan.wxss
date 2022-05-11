@@ -1,0 +1,66 @@
+.search_container {
+    left: 0px;
+    margin: 20px;
+    padding: 5px;
+    width: 320px;
+
+    border-style: solid;
+    box-shadow: 0px 2px 4px 2px #3ea01725;
+    border-width: 0rpx;
+    border-radius: 10px;
+    /* background-color: rgb(109, 201, 196);
+    border: 10px rgb(17, 19, 19); */
+}
+
+.text_style {
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+.button_style_dingdan {
+    margin-top: 10px;
+    padding-top: 10rpx;
+    width: 100px !important;
+    height: 50rpx;
+    border-radius: 10px;
+    background-color: rgb(254, 209, 1);
+    font-size: 12px;
+}
+.button_style_pingjia {
+    margin-top: 10px;
+    padding-top: 10rpx;
+    width: 200rpx !important;
+    height: 50rpx;
+    border-radius: 10px;
+    background-color: rgb(254, 209, 1);
+    font-size: 12px;
+}
+
+.tubiao {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.shangjia_state {
+    margin-left: 80px;
+    color: gray;
+    font-size: 14px;
+}
+
+.dingdan_state {
+    margin-left: 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.tupian_container {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 5px;
+}

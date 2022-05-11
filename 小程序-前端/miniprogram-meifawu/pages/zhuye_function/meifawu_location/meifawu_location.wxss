@@ -1,0 +1,9 @@
+/* pages/meifawu_location/meifawu_location.wxss */
+.map {
+  width: 100%;
+  height: 565px;
+}
+
+.button{
+  width: 100%;
+}

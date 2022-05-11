@@ -1,0 +1,25 @@
+<view style="display: flex;flex-direction: column">
+
+  
+
+  <view class="hr"></view>
+    <view class='item' bindtap="myclick_about">
+        <image src='/images/icon/aboutWe.png' class="icon_style"></image>
+        <view class="title">关于我们</view>
+        <view class="detail2">
+            <text>></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item' bindtap="myclick_xiaoxishezhi">
+        <image src='/images/icon/xiaoxishezhi.png' class="icon_style"></image>
+        <view class="title">消息设置</view>
+        <view class="detail2">
+            <text>></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+</view>

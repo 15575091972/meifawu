@@ -1,0 +1,17 @@
+<view style="display: flex;flex-direction: row;flex-wrap: wrap">
+
+  <view wx:for="{{mybarbers}}" wx:key="index" style="width: 150px;margin-right:30px ;">
+    <view class="search_container" style="display: flex;flex-direction: column;align-items: center;" data-name="{{item.barberId}}" bindtap="getDetail">
+      <image style="width: 100px;height: 100px; border-radius: 50%;" src="{{item.barberImage}}"></image>
+      <text>{{mybarbers[index].barberName}}</text>
+      <text class="text1">{{mybarbers[index].barberLevel}}</text>
+      <view class="text2">
+        <text>好评:</text>
+        <text>{{mybarbers[index].barberGoodrate}}</text>
+        <text style="margin-left: 3px;">| 服务人数:</text>
+        <text>20</text>
+      </view>
+    </view>
+  </view>
+
+</view>

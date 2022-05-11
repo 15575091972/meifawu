@@ -1,0 +1,27 @@
+.text_dianmin{
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .text_version{
+    font-size: 15px;
+    margin-top: 6px;
+  }
+  .text_style1{
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    margin-top: 530px;
+  }
+  .text_style2{
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    margin-top: 550px;
+  }
+  .text_style3{
+    font-size: 13px;
+    color: gray;
+    position: absolute;
+    margin-top: 570px;
+  }

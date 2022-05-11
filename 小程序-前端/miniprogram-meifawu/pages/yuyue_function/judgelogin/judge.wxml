@@ -1,0 +1,8 @@
+<view>
+<view style="font-size: 20px;margin-top: 220px;margin-left:100px;color: rgb(131, 235, 204);">
+美发屋欢迎你的到来
+</view>
+<view style="font-size: 20px;margin-top: 10px;margin-left:100px;color: rgb(131, 235, 204);">
+请先登录再来预约哦！
+</view>
+</view>

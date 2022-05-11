@@ -1,0 +1,9 @@
+<view style="display: flex;flex-direction: column;align-items: center;">
+  <image style="width: 80px;height: 80px;margin-top: 50px;" src="/images/picture/logo.png"></image>
+  
+  <text class="text_dianmin">美发屋</text>
+  <text class="text_version">Version 1.0.0</text>
+  <text class="text_style1">刘郭孟小组  版权所有</text>
+  <text class="text_style2">Copyright ©  2021 liuguomengGroup.</text>
+  <text class="text_style3">All Rights Reserved.</text>
+</view>

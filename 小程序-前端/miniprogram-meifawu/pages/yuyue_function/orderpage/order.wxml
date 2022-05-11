@@ -1,0 +1,19 @@
+
+<view>
+    <view style="padding-left: 0px;">
+        <view>
+            <view class="search_container">
+                <view class='item_style_name'>姓名：{{name_output}}</view>
+                <view class='item_style'>预约日期：{{date}}</view>
+                <view class='item_style'>预约时间：{{time}}</view>
+                <view class='item_style'>预约美发师：{{barber}}</view>
+                <view class='item_style'>服务项目：{{project}}</view>
+                <view class='item_style'>联系电话：{{phone}}</view>
+                <view class='item_style'>其他需求：{{demand}}</view>
+                <view class='item_style' style="color: red;">订单总金额：{{order_price}}</view>
+            </view>
+        </view>
+    </view>
+    
+    <button type="primary" style="margin-top: 0px;" bindtap="myclick_confirm">确认订单</button>
+</view>

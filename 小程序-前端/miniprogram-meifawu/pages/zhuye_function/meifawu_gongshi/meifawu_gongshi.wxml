@@ -1,0 +1,54 @@
+<view style="padding-left: 0px;">
+  <view class="search_container" style="display: flex;flex-direction: column;">
+    <!-- 店铺标志 -->
+    <view>
+      <image src='/images/icon/store.png' style="width: 13px;height: 13px;margin-left: 1px;"></image>
+      <text style="margin-left: 5px;font-size: 12px;color: gray;">美发屋</text>
+    </view>
+
+    <view wx:for="{{mygongshi}}" wx:key="index">
+
+      <view style="display: flex;flex-direction: row;">
+        <text style="margin-top: 20px;font-size: 20px;">{{item.publicityName}}</text>
+      </view>
+      <text style="margin-top: 5px;font-size: 12px;color: gray;">{{item.publicityDate}}</text>
+      <view></view>
+      <text style="margin-top: 10px;font-size: 12px;color: gray;">随时退 | 过期退 | 需预约 </text>
+
+      <view class="search_container2" style="display: flex;flex-direction: column;">
+        <text style="font-size: 16px;color: gray;">公示详情</text>
+        <view>
+          <image src='/images/icon/gongshi.png' style="width: 20px;height: 20px;margin-left: 1px;margin-top: 10px;"></image>
+          <text style="margin-top: 10px;margin-left: 10px;">{{item.publicityContent}}</text>
+        </view>
+      </view>
+    </view>
+
+    <text style="color: gray;">----------------------------------------------</text>
+    <text style="font-size: 14px;">品质有保障，不满意安排店长免费调整。</text>
+    <text style="font-size: 16px;color: gray;margin-top: 20px;">购买须知</text>
+    <text style="color: gray;">----------------------------------------------</text>
+    <view style="display: flex;flex-direction: column;">
+      <text style="font-size: 15px;">有效期</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 购买后90天内有效</text>
+    </view>
+    <view style="display: flex;flex-direction: column;margin-top: 10px;">
+      <text style="font-size: 15px;">预约信息</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 请您提前1小时预约</text>
+    </view>
+    <view style="display: flex;flex-direction: column;margin-top: 10px;">
+      <text style="font-size: 15px;">预约信息</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 请您提前1小时预约</text>
+    </view>
+    <view style="display: flex;flex-direction: column;margin-top: 10px;">
+      <text style="font-size: 15px;">规则提醒</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 不再与其他优惠同享</text>
+    </view>
+    <view style="display: flex;flex-direction: column;margin-top: 10px;">
+      <text style="font-size: 15px;">温馨提示</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 如有疑问，请您在消费时向商户咨询</text>
+      <text style="font-size: 14px;color: gray;margin-top: 5px;">· 最终解释权归商户所有</text>
+    </view>
+
+  </view>
+</view>

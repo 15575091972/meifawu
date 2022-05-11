@@ -1,0 +1,49 @@
+<view>
+    <!-- 以下是功能选项 -->
+    <view class='item'>
+        <view class="title">日期</view>
+        <view class="row_container">
+            <!-- 下拉框容器 -->
+            <view class='list_container'>
+                <!--下拉框  -->
+                <view class='list-body' bindtap='bindShowMsg_time'>
+                    <text style="margin-left: 10px;">{{time_onedata}}</text>
+                    <!-- 三目法判断图片要不要旋转180。 -->
+                    <image class="sanjiao {{select_time ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+                </view>
+
+                <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select_time}}">
+                    <view class="select_one" bindtap="mySelect_time" data-name="8:00-10:00">8:00-10:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="10:00-12:00">10:00-12:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="14:00-16:00">14:00-16:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="16:00-18:00">16:00-18:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="20:00-22:00">20:00-22:00</view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class='list_container'>
+            <!--下拉框  -->
+            <view class='list-body' bindtap='bindShowMsg_time'>
+                <text style="margin-left: 10px;">{{time_onedata}}</text>
+                <!-- 三目法判断图片要不要旋转180。 -->
+                <image class="sanjiao {{select_time ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+            </view>
+
+            <!-- 下拉需要显示的列表 -->
+            <view class="select_box" wx:if="{{select_time}}">
+                <view class="select_one" bindtap="mySelect_time" data-name="8:00-10:00">8:00-10:00</view>
+                <view class="select_one" bindtap="mySelect_time" data-name="10:00-12:00">10:00-12:00</view>
+                <view class="select_one" bindtap="mySelect_time" data-name="14:00-16:00">14:00-16:00</view>
+                <view class="select_one" bindtap="mySelect_time" data-name="16:00-18:00">16:00-18:00</view>
+                <view class="select_one" bindtap="mySelect_time" data-name="20:00-22:00">20:00-22:00</view>
+            </view>
+        </view>
+
+    </view>
+
+</view>
+
+

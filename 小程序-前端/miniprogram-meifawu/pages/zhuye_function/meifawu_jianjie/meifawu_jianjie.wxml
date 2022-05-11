@@ -1,0 +1,84 @@
+<view style="padding-left: 0px;">
+
+    <image style="width: 370px;height: 160px;" src="/images/picture/head.png"></image>
+
+    <view class="search_container">
+        <view style="display: flex;flex-direction: row;margin-top:5px;">
+            <image style="width: 70px;height: 70px;" src="/images/picture/logo.png"></image>
+            <view style="display: flex;flex-direction: column;">
+                <view style="margin-top: 5px;">
+                    <text style="margin-left: 15px;margin-top: 10px;font-size: 16px;">美发屋（含浦店）</text>
+                    <image src='/images/icon/gold.png' style="width: 15px;height: 15px;margin-top: 10px; margin-left: 5px;"></image>
+                </view>
+                <view>
+                    <image src='/images/icon/star.png' style="width: 8px;height: 8px;margin-top: 10px; margin-left: 15px;"></image>
+                    <image src='/images/icon/star.png' style="width: 8px;height: 8px;margin-top: 10px; margin-left: 1px;"></image>
+                    <image src='/images/icon/star.png' style="width: 8px;height: 8px;margin-top: 10px; margin-left: 1px;"></image>
+                    <image src='/images/icon/star.png' style="width: 8px;height: 8px;margin-top: 10px; margin-left: 1px;"></image>
+                    <image src='/images/icon/star.png' style="width: 8px;height: 8px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-left: 3px;margin-top: 10px;font-size: 12px;">5.0 效果:4.1 环境:4.5 服务:4.2</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="search_container2" style="width:160px;margin-top: 15px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gold;margin-left: 3px;">岳麓区美发回头客榜第2名</text>
+        </view>
+
+        <view style="margin-left: 5px;margin-top: 20px;">
+            <text style="font-size: 15px;color: gray;">营业至 22:00</text>
+            <view style="display: flex;flex-direction: row;">
+                <view class="search_container2" style="width: 50px;margin-top: 10px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gray;margin-left: 3px;">吸烟区</text>
+                </view>
+                <view class="search_container2" style="width: 50px;margin-top: 10px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gray;margin-left: 3px;">沙发座</text>
+                </view>
+                <view class="search_container2" style="width: 50px;margin-top: 10px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gray;margin-left: 3px;">寄存柜</text>
+                </view>
+                <view class="search_container2" style="width: 60px;margin-top: 10px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gray;margin-left: 3px;">免费WIFI</text>
+                </view>
+                <view class="search_container2" style="width: 60px;margin-top: 10px;margin-left: 5px;">
+                    <text style="font-size: 13px;color: gray;margin-left: 3px;">VIP包房</text>
+                </view>
+
+            </view>
+        </view>
+
+        <view style="display: flex;flex-direction: row; margin-top: 5px;">
+            <view style="display: flex;flex-direction: column;">
+                <text style="margin-top: 15px; color: gold;">品牌介绍 B R A N D</text>
+                <text style="margin-top: 5px;font-size: 12px;">美发屋品牌由刘郭孟小组创建于2021年，总部位于湖南长沙，时国内首家以生态美业为基础结合创新医疗的多元化公司，秉承‘将美和健康带给全世界’的使命。美发屋一直秉持“以顾客为中心”的经营理念，将生态美业和创新医疗深度融合，为追求高质量生活的精英人群提供健康与美丽的系统解决方案。</text>
+            </view>
+        </view>
+
+        <view style="display: flex;flex-direction: row; margin-top: 5px;">
+            <view style="display: flex;flex-direction: column;">
+                <text style="margin-top: 15px; color: gold;">品牌荣誉 H O R N O U R</text>
+                <view style="display: flex;flex-direction: row;">
+                    <image src='/images/icon/gold.png' style="width: 13px;height: 13px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-top: 9px;margin-left: 5px;font-size: 12px;">2021年中国美业“五星级门店”入选</text>
+                </view>
+                <view style="display: flex;flex-direction: row;">
+                    <image src='/images/icon/gold.png' style="width: 13px;height: 13px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-top: 9px;margin-left: 5px;font-size: 12px;">2021年最佳星级门店</text>
+                </view>
+                <view style="display: flex;flex-direction: row;">
+                    <image src='/images/icon/gold.png' style="width: 13px;height: 13px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-top: 9px;margin-left: 5px;font-size: 12px;">2021年美容美发化妆品行业知名品牌</text>
+                </view>
+                <view style="display: flex;flex-direction: row;">
+                    <image src='/images/icon/gold.png' style="width: 13px;height: 13px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-top: 9px;margin-left: 5px;font-size: 12px;">2021年中国美业名店</text>
+                </view>
+                <view style="display: flex;flex-direction: row;">
+                    <image src='/images/icon/gold.png' style="width: 13px;height: 13px;margin-top: 10px; margin-left: 1px;"></image>
+                    <text style="margin-top: 9px;margin-left: 5px;font-size: 12px;">2021年行睿榜百强沙龙</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="margin-top: 50px;"></view>
+</view>

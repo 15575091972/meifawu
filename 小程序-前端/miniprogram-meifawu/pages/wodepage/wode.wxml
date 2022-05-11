@@ -1,0 +1,97 @@
+<view>
+    <view class="userInfo">
+        <!-- //需要用户授权 -->
+        <block wx:if="{{!hasUserInfo}}">
+            <button style="top:60px;" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 微信登录</button>
+            <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+        </block>
+        <block wx:else>
+            <view style="display: flex;flex-direction: row;">
+                <image class="touimage" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <view style="margin-top: 60px;display: flex;flex-direction: column;">
+                    <text class="user_nickName">{{userInfo.nickName}}</text>
+                    <text class="user_category">{{user_message.userCategory}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+
+    <!-- 以下是功能选项 -->
+    <view class="hr"></view>
+    <view class='item'>
+        <image src='/images/icon/yue.png' class="icon_style"></image>
+        <view class="title">账户余额</view>
+        <view class="detail2">
+            <text>{{fuhao}}{{user_balance}}</text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item' bindtap="myclick_chongzhi">
+        <image src='/images/icon/huiyuan.png' class="icon_style"></image>
+        <view class="title">会员充值</view>
+        <view class="detail2">
+            <text>></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item' bindtap="myclick_chongzhijilu">
+        <image src='/images/icon/chongzhijilu.png' class="icon_style"></image>
+        <view class="title">充值记录</view>
+        <view class="detail2">
+            <text>></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item' bindtap="myclick_xiaofeijilu">
+        <image src='/images/icon/xiaofeijilu.png' class="icon_style"></image>
+        <view class="title">消费记录</view>
+        <view class="detail2">
+            <text>></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+
+    <view class='item' bindtap="myclikc_dingdan">
+        <image src='/images/icon/dingdan.png' class="icon_style"></image>
+        <view class="title">我的订单</view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="line"></view>
+
+    <view class="item" bindtap="myclikc_fuwu">
+        <image src='/images/icon/fuwu.png' class="icon_style"></image>
+        <view class="title">我的服务</view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="line"></view>
+
+    <view class="item" bindtap="myclick_fankui">
+        <image src='/images/icon/fankui.png' class="icon_style"></image>
+        <view class="title">意见反馈</view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="line"></view>
+
+    <view class="item" bindtap="myclick_shezhi">
+        <image src='/images/icon/shezhi.png' class="icon_style"></image>
+        <view class="title">设置</view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="hr"></view>
+</view>

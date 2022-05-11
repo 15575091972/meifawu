@@ -1,0 +1,66 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/homepage/homepage",
+        "pages/wodepage/wode",
+        "pages/yuyuepage/yuyue",
+        "pages/testpage/test",
+        "pages/wode_function/huiyuanchongzhi/chongzhi",
+        "pages/wode_function/zhanghuyue/yue",
+        "pages/wode_function/wodedingdan/dingdan",
+        "pages/wode_function/wodefuwu/fuwu",
+        "pages/wode_function/yijianfankui/fankui",
+        "pages/wode_function/shezhi/shezhi",
+        "pages/testpage1/test1",
+        "pages/yuyue_function/orderpage/order",
+        "pages/zhuye_function/meifawu_gongshi/meifawu_gongshi",
+        "pages/zhuye_function/meifawu_jianjie/meifawu_jianjie",
+        "pages/zhuye_function/meifawu_location/meifawu_location",
+        "pages/yuyue_function/barber_message/barber_message",
+        "pages/yuyue_function/barber_detail/barber_detail",
+        "pages/wode_function/pingjia/pingjia",
+        "pages/yuyue_function/judgelogin/judge",
+        "pages/wode_function/shezhi_function/about/about",
+        "pages/wode_function/shezhi_function/xiaoxishezhi/xiaoxishezhi",
+        "pages/wode_function/chongzhijilu/chongzhijilu",
+        "pages/wode_function/xiaofeijilu/xiaofeijilu",
+        "pages/zhuye_function/meifawu_state/meifawu_state",
+        "pages/zhuye_function/meifawu_timedetail/meifawu_timedetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/homepage/homepage",
+                "text": "主页",
+                "iconPath": "/images/tab/zhuye.png",
+                "selectedIconPath": "/images/tab/zhuye.png"
+            },
+            {
+                "pagePath": "pages/yuyuepage/yuyue",
+                "text": "预约",
+                "iconPath": "/images/tab/yuyue.png",
+                "selectedIconPath": "/images/tab/yuyue.png"
+            },
+            {
+                "pagePath": "pages/wodepage/wode",
+                "text": "我的",
+                "iconPath": "/images/tab/wode.png",
+                "selectedIconPath": "/images/tab/wode.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取位置"
+        }
+    }
+}

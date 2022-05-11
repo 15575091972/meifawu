@@ -1,0 +1,8 @@
+<!--pages/meifawu_location/meifawu_location.wxml-->
+<view>
+  <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location >
+  </map>
+</view>
+<view>
+  <button class="button" type="primary" bindtap="navigate">导航</button>
+</view>

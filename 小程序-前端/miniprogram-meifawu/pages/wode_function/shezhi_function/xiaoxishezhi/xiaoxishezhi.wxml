@@ -1,0 +1,16 @@
+<view style="display: flex;flex-direction: column">
+  <view style="display: flex;flex-direction: row">
+    <text class="title">通知提醒</text>
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change" style="margin-left: 310px;position: absolute;" />
+  </view>
+
+  <view style="display: flex;flex-direction: row">
+    <text class="title">声音</text>
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change" style="margin-left: 310px;position: absolute;" />
+  </view>
+  
+  <view style="display: flex;flex-direction: row">
+    <text class="title">震动</text>
+    <switch checked="{{switch1Checked}}" bindchange="switch1Change" style="margin-left: 310px;position: absolute;" />
+  </view>
+</view>

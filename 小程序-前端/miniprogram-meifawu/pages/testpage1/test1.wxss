@@ -1,0 +1,166 @@
+Page {
+  background-color: #f4f4f4;
+  width: 90%;
+  margin-left: 20px;
+  margin-top:20px;
+  border:solid 2px;
+  border-radius: 10px;
+  border-color: rgb(149, 228, 185);
+}
+
+.hr {
+  width: 100%;
+  height: 15px;
+  background-color: #f4f5f6;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.detail2 {
+  font-size: 15px;
+  position: absolute;
+  right: 30px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+}
+
+.line {
+  border: 1px solid #ccc;
+  opacity: 0.2;
+}
+
+
+
+.item_style {
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 12px;
+  color: rgb(255, 255, 255);
+}
+
+
+.input-placeholder {
+  margin-left: 10px;
+}
+
+/* 下拉框容器样式 */
+.list_container {
+  padding: 0 0rpx;
+  background-color: #fff;
+  /* position: relative; */
+  width: 100%;
+  /* margin-top: 0px; */
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.list-body {
+  width: 150px;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid rgb(255, 255, 255); */
+  margin-left: 3px;
+  /* padding: 0 10rpx; */
+}
+
+.select_box {
+  background-color: rgb(255, 255, 255);
+  padding: 0 15px;
+  width: 72%;
+  /* position: absolute; */
+  top: 65rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+.select_box_date {
+  background-color: rgb(255, 255, 255);
+  padding: 0 30rpx;
+  width: 80%;
+  /* position: absolute; */
+  top: 65rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst_date 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+    height: 0rpx;
+  } 
+  /* 下拉菜单一次延伸的最大长度 */
+to {
+    height: 150px;
+  }
+} 
+
+@keyframes myfirst_date {
+  from {
+    height: 0rpx;
+  } 
+  /* 下拉菜单一次延伸的最大长度 */
+to {
+    height: 90px;
+  }
+} 
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.sanjiao {
+  height: 30px;
+  width: 30px;
+}
+
+.rotateRight {
+  /* 180°旋转图片。 */
+  transform: rotate(180deg);
+  transition: transform 0.4s;
+}
+
+.row_container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.column_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.jianjiao {
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 5px;
+  right: 10px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+  font-size: 20px;
+}
+
+
+
+
+
+
+

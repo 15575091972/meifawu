@@ -1,0 +1,41 @@
+<view style="display: flex;flex-direction: column;" wx:for="{{mybarbers}}" wx:key="index">
+  <view class="search_container">
+    <view style="display: flex;flex-direction: row;margin-top:5px;">
+      <image style="width: 95px;height: 95px;" src="{{item.barberImage}}"></image>
+      <view style="display: flex;flex-direction: column;">
+        <text style="margin-left: 15px;margin-top: 5px;font-size: 16px;">{{item.barberName}}</text>
+        <view>
+          <image src='/images/icon/store.png' style="width: 12px;height: 12px;margin-top: 8px; margin-left: 15px;"></image>
+          <text style="margin-left: 3px;margin-top: 0px;font-size: 13px;">美发屋 | </text>
+          <text style="margin-left: 3px;margin-top: 0px;font-size: 13px;">{{item.barberLevel}}</text>
+        </view>
+        <view>
+          <image src='/images/icon/haopingdu.png' style="width: 12px;height: 12px;margin-top: 8px; margin-left: 15px;"></image>
+          <text style="margin-left: 3px;font-size: 13px;">好评度：</text>
+          <text style="margin-left: 3px;font-size: 13px;">{{item.barberGoodrate}}</text>
+        </view>
+        <view>
+          <image src='/images/icon/people.png' style="width: 12px;height: 12px;margin-top: 8px; margin-left: 15px;"></image>
+          <text style="margin-left: 3px;font-size: 13px;">服务人数：</text>
+          <text style="margin-left: 3px;font-size: 13px;">{{item.serveCount}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view style="margin-left: 5px;margin-top: 5px;">
+      <view style="display: flex;flex-direction: row;">
+        <image src='/images/icon/dianzan.png' style="width: 20px;height: 20px;margin-top: 10px;"></image>
+        <view class="search_container2" style="width: 100%;margin-top: 10px;margin-left: 5px;">
+          <text style="font-size: 13px;color: gray;margin-left: 3px;">{{item.begoodat}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view style="display: flex;flex-direction: row; margin-top: 5px;">
+      <view style="display: flex;flex-direction: column;">
+        <text style="margin-top: 15px; color: gold;">美发师介绍 INTRODUCTION</text>
+        <text style="margin-top: 5px;font-size: 13px;">{{item.barberIntroduction}}</text>
+      </view>
+    </view>
+  </view>
+</view>

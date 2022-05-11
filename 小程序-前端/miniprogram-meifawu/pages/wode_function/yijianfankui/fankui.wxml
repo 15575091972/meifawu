@@ -1,0 +1,18 @@
+<view style="display: flex;flex-direction: column;">
+<view>
+  <text class="wenti">问题和意见</text>
+  <text class="xingxing">*</text>
+</view>
+  <view class="conts">
+    <textarea class="areas" placeholder='留下点评，帮助更多人' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+        <text class="hint" style="margin-top: 120px;">{{texts}}</text>
+    </textarea>
+  </view>
+  <text class="phone_container">联系方式</text>
+  <view class="conts">
+    <textarea class="areas2" placeholder='留下联系方式，更可能解决问题~' maxlength="{{max2}}" bindinput="input_phone">
+    </textarea>
+  </view>
+  <button bindtap="submit_advice" style="border-radius: 20px; background-color: rgb(27, 189, 135);color: white;margin-top: 50px;">提交</button>
+</view>

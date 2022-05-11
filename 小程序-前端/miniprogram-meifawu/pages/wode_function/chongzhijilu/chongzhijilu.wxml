@@ -1,0 +1,18 @@
+<view class="search_container" style="display: flex;flex-direction: row;" wx:for="{{myrecords}}" wx:key="index">
+    <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;flex-direction: row;">
+            <image src='/images/icon/store.png' style="width: 20px;height: 20px; margin-left: 5px;margin-top: 5px;"></image>
+            <text style="margin-left: 10px;font-size: 17px;margin-top: 5px;">美发屋</text>
+        </view>
+        <text style="color: gray;font-size: 15px;">{{item.investDate}}</text>
+    </view>
+
+    <view style="display: flex;flex-direction: column;margin-left: 90px;margin-top: 5px;">
+        <view style="display: flex;flex-direction: row;">
+            <text class="text_style">+</text>
+            <text class="text_style">{{item.investMoney}}</text>
+            <text class="text_style">{{danwei}}</text>
+        </view>
+        <text style="color: gray;font-size: 16px;">充值金额</text>
+    </view>
+</view>

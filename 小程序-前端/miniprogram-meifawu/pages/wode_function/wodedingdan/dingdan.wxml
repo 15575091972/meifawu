@@ -1,0 +1,46 @@
+<view class="search_container" style="display: flex;flex-direction: column;" wx:for="{{myorders}}" wx:key="index">
+        <view>
+            <image src='/images/icon/meifa.png' class="tubiao"></image>
+            <text style="margin-left: 10px;font-size: 17px;">美发屋</text>
+            <text class="shangjia_state" style="color:{{item.verifyState=='已确认'?'rgb(27,189,135)':'rgb(255,60,68)'}}">商家{{item.verifyState}}</text>
+            <text class="dingdan_state" style="color:{{item.orderState=='已完成'?'rgb(27,189,135)':'rgb(255,60,68)'}}">订单{{item.orderState}}</text>
+        </view>
+        <text style="color: gray;margin-left: 2px;">——————————————————</text>
+        <view style="display: flex;flex-direction: row;">
+            <image src='/images/picture/logo.png' class="tupian_container"></image>
+            <view>
+                <view class="text_style">
+                    <text>预约日期：</text>
+                    <text>{{item.appointmentDate}}</text>
+                </view>
+                <view class="text_style">
+                    <text>预约时间段：</text>
+                    <text> {{item.timeslot}}</text>
+                </view>
+                <view class="text_style">
+                    <text>预约项目：</text>
+                    <text>{{item.orderDetail}}</text>
+                </view>
+                <view class="text_style">
+                    <text>指定美发师：</text>
+                    <text>{{item.barberName}}</text>
+                </view>
+                <view class="text_style">
+                    <text>项目总价：</text>
+                    <text>{{item.orderPrice}}</text>
+                    <text>元</text>
+                </view>
+            </view>
+        </view>
+
+        <view style="display: flex;flex-direction: row;">
+           
+            <button bindtap="myrepeat" class="button_style_dingdan" style="margin-left: 100px;">再来一单</button>
+            <view bindtap="myevaluate" data-name="{{item.orderId}}">
+                <button bindtap="mypingjia" class="button_style_pingjia" style="margin-left: 20px;">评价</button>
+            </view>
+
+        </view>
+
+        <view style="margin-top: 5px;"></view>
+</view>

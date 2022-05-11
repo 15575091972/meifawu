@@ -1,0 +1,51 @@
+<view class="search_container">
+    <view style="margin-top: 5px;display: flex;flex-direction: column;">
+        <!-- 余额 -->
+        <view>
+            <text style="font-size: 15px;">账户余额：</text>
+            <text class="user_balance_container">{{fuhao_init}}{{user_balance}}</text>
+            <image src='/images/icon/rmb2.png' class="user_balance_image"></image>
+        </view>
+        <!-- 充值 -->
+        <view style="margin-top: 30px;">
+            <text style="color: gray;font-size: 14px;">充值金额</text>
+            <text style="color: red;font-size: 13px;margin-left: 100px;">禁止未成年人充值大面金额</text>
+        </view>
+        <view class="chongzhi_balance">
+            <button class="button_style" hover-class="hover" data-name="30" bindtap="select_money">30元</button>
+            <button class="button_style" hover-class="hover" data-name="58" bindtap="select_money">58元</button>
+        </view>
+        <view class="chongzhi_balance">
+            <button class="button_style" hover-class="hover" data-name="98" bindtap="select_money">98元</button>
+            <button class="button_style" hover-class="hover" data-name="198" bindtap="select_money">198元</button>
+        </view>
+        <view class="chongzhi_balance">
+            <button class="button_style" hover-class="hover" data-name="298" bindtap="select_money">298元</button>
+            <button class="button_style" hover-class="hover" data-name="398" bindtap="select_money">398元</button>
+        </view>
+        <view class="chongzhi_balance">
+            <button class="button_style" hover-class="hover" data-name="598" bindtap="select_money">598元</button>
+            <button bindtap="showDialogBtn" class="button_style" hover-class="hover">其他金额</button>
+        </view>
+        <button bindtap="chongzhi_submit" style="border-radius: 20px; background-color: rgb(27, 189, 135);color: white;margin-top: 120px; width: 95%;">立即充值{{fuhao}}{{select_jine}}</button>
+        <view style="height: 80px;"></view>
+    </view>
+
+    <!--弹窗-->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+    <view class="modal-dialog" wx:if="{{showModal}}">
+        <view class="modal-title">会员充值</view>
+        <view class="modal-content">
+            <view class="modal-input">
+                <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入任意充值金额"></input>
+            </view>
+        </view>
+
+        <view class="modal-footer">
+            <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+            <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">充值</view>
+        </view>
+    </view>
+
+</view>

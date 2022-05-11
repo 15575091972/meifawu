@@ -1,0 +1,159 @@
+<view>
+    <!-- 以下是功能选项 -->
+    <view class="hr"></view>
+
+    <view class='item'>
+
+        <view class="title">服务日期：</view>
+        <view class="row_container">
+            <!-- 下拉框容器 -->
+            <view class='list_container'>
+                <!--下拉框  -->
+                <view class='list-body' bindtap='bindShowMsg_date'>
+                    <text style="margin-left: 10px;">{{date_onedata}}</text>
+                    <!-- 三目法判断图片要不要旋转180。 -->
+                    <image class="sanjiao {{select_date ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+                </view>
+
+               <!-- 下拉需要显示的列表 -->
+               <view class="select_box_date" wx:if="{{select_date}}">
+                    <view wx:for='{{mydates}}' wx:key="item">
+                        <view class="select_one" bindtap="mySelect_date" data-name="{{item}}">{{item}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="detail2">
+            <text>></text>
+        </view>
+
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item'>
+
+        <view class="title">服务时间：</view>
+        <view class="row_container">
+            <!-- 下拉框容器 -->
+            <view class='list_container'>
+                <!--下拉框  -->
+                <view class='list-body' bindtap='bindShowMsg_time'>
+                    <text style="margin-left: 10px;">{{time_onedata}}</text>
+                    <!-- 三目法判断图片要不要旋转180。 -->
+                    <image class="sanjiao {{select_time ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+                </view>
+
+                <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select_time}}">
+                    <view class="select_one" bindtap="mySelect_time" data-name="8:00-10:00">8:00-10:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="10:00-12:00">10:00-12:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="14:00-16:00">14:00-16:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="16:00-18:00">16:00-18:00</view>
+                    <view class="select_one" bindtap="mySelect_time" data-name="20:00-22:00">20:00-22:00</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="detail2">
+            <text>></text>
+        </view>
+
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item'>
+        <view class="title">美发师：</view>
+        <view class="row_container">
+            <view class='list_container_barber'>
+                <!--下拉框  -->
+                <view class='list-body' bindtap='bindShowMsg_barber'>
+                    <text style="margin-left: 10px;">{{barber_onedata}}</text>
+                    <!-- 三目法判断图片要不要旋转180。 -->
+                    <image class="sanjiao {{select_barber ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+                </view>
+
+                <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select_barber}}">
+                    <view wx:for='{{mybarbers}}' wx:key="index">
+                        <view class="select_one" bindtap="mySelect_barber" data-name="{{item.barberName}}">{{item.barberName}}-{{item.barberLevel}}</view>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='item'>
+        <view class="title">服务项目：</view>
+        <view class="row_container">
+            <view class='list_container'>
+                <!--下拉框  -->
+                <view class='list-body' bindtap='bindShowMsg_project'>
+                    <text style="margin-left: 10px;">{{project_onedata}}</text>
+                    <!-- 三目法判断图片要不要旋转180。 -->
+                    <image class="sanjiao {{select_project ? 'rotateRight' :''}}" src='/images/icon/xiaosanjiao.png'></image>
+                </view>
+
+                <!-- 下拉需要显示的列表 -->
+                <view class="select_box" wx:if="{{select_project}}">
+                    <view wx:for='{{myproject}}' wx:key="index">
+                        <view class="select_one" bindtap="mySelect_project" data-name="{{item.projectName}}">{{item.projectName}}</view>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="line"></view>
+
+
+
+    <view class="item">
+        <view class="title">姓名：</view>
+        <input class="input_style" bindinput="inputvalue_name" placeholder-class="input-placeholder" placeholder="请输入姓名" />
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+    <view class="line"></view>
+
+    <view class="item">
+        <view class="title">电话：</view>
+        <input class="input_style" bindinput="inputvalue_phone" placeholder-class="input-placeholder" placeholder="请输入电话"   />
+        <view class="detail2">
+            <text> ></text>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="column_container">
+        <view class="title">其他要求：</view>
+
+        <view class="conts">
+            <textarea class="areas" placeholder='你的要求，我们尽全力满足！' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+            <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+            <text class="hint">{{texts}}</text>
+            </textarea>
+        </view>
+    </view>
+
+    <view class="line"></view>
+
+    <view>
+        <button type="primary" style="margin-top: 10px;" bindtap="myclick_dingdan">提交预约</button>
+    </view>
+
+    <view class="hr"></view>
+</view>

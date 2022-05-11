@@ -1,0 +1,39 @@
+
+<view class="search_container" style="display: flex;flex-direction: row;" bindtap="myclick_barbermessage">
+    <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;flex-direction: row;">
+            <image src='/images/icon/people.png' style="width: 20px;height: 20px; margin-left: 5px;margin-top: 5px;"></image>
+
+        </view>
+        <text style="color: gray;font-size: 15px;">2021-12-30</text>
+    </view>
+
+    <view style="display: flex;flex-direction: column;margin-left: 90px;margin-top: 5px;">
+        <view style="display: flex;flex-direction: row;">
+            <!-- <text class="text_style">+</text> -->
+            <text class="text_style" style="margin-right: 10px;">{{barber_total_count}}人 </text>
+            <text class="text_style">详情</text>
+        </view>
+        <text style="color: gray;font-size: 16px;">门店美发师</text>
+    </view>
+</view>
+
+
+<view class="search_container" style="display: flex;flex-direction: row;" bindtap="myclick_timedetail">
+    <view style="display: flex;flex-direction: column;">
+        <view style="display: flex;flex-direction: row;">
+            <image src='/images/icon/store.png' style="width: 20px;height: 20px; margin-left: 5px;margin-top: 5px;"></image>
+
+        </view>
+        <text style="color: gray;font-size: 15px;">2021-12-30</text>
+    </view>
+
+    <view style="display: flex;flex-direction: column;margin-left: 90px;margin-top: 5px;">
+        <view style="display: flex;flex-direction: row;">
+            <!-- <text class="text_style">+</text> -->
+            <text class="text_style">详情</text>
+        </view>
+        <text style="color: gray;font-size: 16px;">预约时间明细</text>
+    </view>
+</view>
+

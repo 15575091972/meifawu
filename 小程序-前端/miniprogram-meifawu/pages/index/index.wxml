@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view>
+<image src="/images/picture/fengmian.png" style="width: 375px;height: 667px;margin-top: -20px;"></image>  
+</view>

@@ -1,0 +1,51 @@
+<view>
+<!-- 星级评价 -->
+  <view class='container' style="display: flex;flex-direction: row;">
+    <image class="image1" src="/images/picture/logo.png"></image>
+    <view class='container' style="display: flex;flex-direction: column;">
+    <text style="position: absolute;top: 20px;left: 143px;color: gray;">环境</text>
+    <text style="position: absolute;top: 60px;left: 143px;color: gray">技术</text>
+    <text style="position: absolute;top: 100px;left: 143px;color: gray">服务</text>
+    </view>
+  <view class='evaluate_contant'>
+
+    <block wx:for='{{evaluate_contant}}' wx:key='index' wx:for-index='idx'>
+      <view class='evaluate_item'>
+        <view class='evaluate_title'>{{item}}</view>
+        <view class='evaluate_box'>
+          <!--展示每个评价条目的星星 -->
+          <block wx:for="{{stars}}" wx:key='index'>
+            <image class="star-image" style="left: {{item*80}}rpx" src="{{scores[idx] > item ?(scores[idx]-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+              <view class="item" style="left:0rpx" data-score="{{item + 0.5}}" data-idx='{{idx}}' bindtap="selectLeft"></view>
+              <view class="item" style="left:20rpx" data-score="{{item + 1}}" data-idx='{{idx}}' bindtap="selectRight"></view>
+            </image>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+
+
+  <view class="conts">
+    <textarea class="areas" placeholder='留下点评，帮助更多人' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs"> 
+        <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+        <text class="hint">{{texts}}</text>
+    </textarea>
+</view>
+
+<view class="img_box" style="margin-top: 5px;">
+  <view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+    <image src='{{item}}' bindlongpress="deleteImage" bindtap="listenerButtonPreviewImage" data-index="{{index}}" mode='widthFix' />
+  </view>
+  <view class="imgs">
+    <view class="images" bindtap="upload">
+      <image src='/images/icon/tianjia.png' mode='widthFix' style="width:90px;height:90px"/>
+    </view>
+  </view>
+</view>
+
+  <button class="button_style" style="margin-left: 240px;"  bindtap='submit_evaluate'>提交</button>
+
+</view>

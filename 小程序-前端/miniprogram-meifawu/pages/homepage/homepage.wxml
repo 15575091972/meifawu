@@ -1,0 +1,65 @@
+<view>
+  <!-- 轮播图 -->
+  <swiper style="height: 180px;width:600px;margin-left: 12px; margin-top: 2px;" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <swiper-item>
+      <image style="width: 350px;height: 180px;" src="https://m.qpic.cn/psc?/V52U1DUF1b9FUn0UhzAD4MkXi42GUECk/ruAMsa53pVQWN7FLK88i5mmyBAfBFMYad1faA7.aKqxkCpF*dHXYWJJ3XaTQZRAEUeoJJj0.vdYtRI6QG21R4vlZPBk6fWCmpJWWbO8HNDg!/mnull&bo=5gKbAQAAAAABB14!&rf=photolist&t=5"></image>
+    </swiper-item>
+    <swiper-item>
+      <image style="width: 350px;height: 180px;" src="https://m.qpic.cn/psc?/V52U1DUF1b9FUn0UhzAD4MkXi42GUECk/ruAMsa53pVQWN7FLK88i5hqjj8rkdtQGv2UjmAQhJrsIjO*FW1Go9t*cPhOSMylmfKyd1liK8AAk1C1VQZYHorI9QgWmrrZSfhUj5ki7C4E!/mnull&bo=5gKbAQAAAAABB14!&rf=photolist&t=5"></image>
+    </swiper-item>
+    <swiper-item>
+      <image style="width: 350px;height: 180px;" src="https://m.qpic.cn/psc?/V52U1DUF1b9FUn0UhzAD4MkXi42GUECk/ruAMsa53pVQWN7FLK88i5vZ4ZwOXZgzSKll*Zmno5ypGVz.XMxyo8VFLgBWnVDisN4QeAJxJcsF*NmupGyxirPSy8.AQaxRhwYMHlI0UXr4!/mnull&bo=5gKbAQAAAAABB14!&rf=photolist&t=5"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 店家简介 -->
+  <view style="border-radius: 10px;background-color: rgb(27, 189, 135); width: 350px;margin-left: 12px; margin-top: 5px;">
+    <view class='item'>
+      <image src='/images/icon/store.png' class="icon"></image>
+      <view class="title">店内状态</view>
+      <button plain="false" style="width: 20px;height: 40px; border: rgb(27, 189, 135);margin-top: 5px; margin-left: 280px;position: absolute;" bindtap="myclick_state">
+        <image src='../../images/icon/right.png' style="width: 20px;height: 20px;"></image>
+      </button>
+    </view>
+    <view class='item'>
+      <image src='../../images/icon/time.png' class="icon"></image>
+      <view class="title">营业时间 08:00-22:00</view>
+      <button plain="false" style="width: 20px;height: 40px; border: rgb(27, 189, 135);margin-top: 5px; margin-left: 280px;position: absolute;" bindtap="myclick_jianjie">
+        <image src='../../images/icon/right.png' style="width: 20px;height: 20px;"></image>
+      </button>
+    </view>
+    <view class='item'>
+      <image src='../../images/icon/location.png' class="icon"></image>
+      <view class="title">湖南省长沙市岳麓区学士路</view>
+      <button plain="false" style="width: 20px;height: 40px; border: rgb(27, 189, 135);margin-top: 5px; margin-left: 280px;position: absolute;" bindtap="myclick_location">
+        <image src='../../images/icon/right.png' style="width: 20px;height: 20px;"></image>
+      </button>
+    </view>
+    <view class='item'>
+      <image src='../../images/icon/phone.png' class="icon"></image>
+      <view class="title">联系电话 15073279665</view>
+    </view>
+
+  </view>
+  <!-- 公示 -->
+  <view style="border-radius: 10px;background-color: rgb(27, 189, 135); width: 350px;margin-left: 12px; margin-top: 5px;">
+    <image style="width: 200px;height: 100px;margin-left: 80px;" src="/images/picture/gongshi.png"></image>
+
+
+    <view  wx:for="{{gongshis}}" wx:key="index">
+      <view class="item" bindtap="getDetail" data-name="{{item.publicityId}}">
+      <image src='../../images/icon/circle.png' class=" icon">
+      </image>
+      <text class="title">{{item.publicityName}}</text>
+      <!-- plain="false" -->
+      <button plain="false" style="width: 20px;height: 40px; border: rgb(27, 189, 135);margin-top: 5px; margin-left: 280px;position: absolute;" bindtap="myclick_gongshi">
+        <image bindtap="getDetail" data-name="{{item.publicityId}}" src='../../images/icon/right.png' class="jiantou_container"></image>
+      </button>
+    </view>
+
+    </view>
+
+
+
+
+  </view>
+</view>

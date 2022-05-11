@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "测试页面",
+    "enablePullDownRefresh": true
+}
