@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace是UserMapper的带包名路径-->
+<mapper namespace="com.meifawu.meifawu.dao.UserMapper">
+    <!--select 表示查询方法 id表示UserMapper接口里面方法的名字-->
+    <!--returnType 表示方法的返回值类型 如果是集合类型只需要给定集合里的对象类型（前面加上包名）-->
+    <select id="findAllUser"  resultMap="userMap">
+        select * from user
+    </select>
+    <resultMap id="userMap" type="com.meifawu.meifawu.entity.User">
+        <id property="user_id" column="user_id"></id>
+        <id property="nick_name" column="nick_name"></id>
+        <id property="header_url" column="header_url"></id>
+        <id property="user_category" column="user_category"></id>
+        <id property="user_balance" column="user_balance"></id>
+    </resultMap>
+
+
+<!--    <select id="validateStatus" resultMap="userMap1">-->
+<!--        select * from user where user_id = #{user_id} and password = #{password}-->
+<!--    </select>-->
+<!--    <resultMap id="userMap1" type="com.meifawu.meifawu.entity.User">-->
+<!--        <id property="user_id" column="user_id"></id>-->
+<!--        <id property="user_name" column="user_name"></id>-->
+<!--        <id property="password" column="password"></id>-->
+<!--        <id property="user_category" column="user_category"></id>-->
+<!--    </resultMap>-->
+
+    <insert id="addUser" parameterType="com.meifawu.meifawu.entity.User">
+        insert into user (nick_name,header_url) values (#{nick_name},#{header_url})
+    </insert>
+
+<!--    <select id="findUserById" resultMap="userMap2">-->
+<!--        select * from user where user_id = #{user_id}-->
+<!--    </select>-->
+<!--    <resultMap id="userMap2" type="com.meifawu.meifawu.entity.User">-->
+<!--        <id property="user_id" column="user_id"></id>-->
+<!--        <id property="user_name" column="user_name"></id>-->
+<!--        <id property="password" column="password"></id>-->
+<!--        <id property="user_category" column="user_category"></id>-->
+<!--    </resultMap>-->
+
+</mapper>
